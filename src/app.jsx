@@ -1,12 +1,13 @@
 import Table from "./components/table";
+import { BELTS, CHAMPIONS } from "./data";
 
 export default function App() {
   return (
     <Table
-      col1={["item1", "item2", "item3"]}
-      col2={[1, 2, 3]}
-      col1Header={"Name"}
-      col2Header={"Age"}
+      col1={BELTS}
+      col2={CHAMPIONS}
+      col1Header="Belt"
+      col2Header="Champion"
     />
   );
 }
